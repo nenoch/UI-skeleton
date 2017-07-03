@@ -14,27 +14,27 @@
       <div class="row">
         <div class="col-md-4 col-sm-4 col-lg-4 visible">
           <div class="list-group">
-            <div class="list-group-item table-field">
+            <div draggable="true" id="lorem-ipsum" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
               <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
-            <div class="list-group-item table-field">
+            <div draggable="true" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
             <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
-            <div class="list-group-item table-field">
+            <div draggable="true" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
               <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
-            <div class="list-group-item table-field">
+            <div draggable="true" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
               <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
-            <div class="list-group-item table-field">
+            <div draggable="true" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
               <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
-            <div class="list-group-item table-field">
+            <div draggable="true" ondragstart="dragstartHandler(event)" class="list-group-item table-field">
               Lorem ipsum
               <span class="glyphicon glyphicon-menu-hamburger pull-right" aria-hidden="true"></span>
             </div>
@@ -49,6 +49,9 @@
                 <label class="sr-only" for="X">Value for the X axis</label>
                 <div class="input-group">
                   <div class="input-group-addon">X</div>
+                  <div id="dropX" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                    Drop value here
+                  </div>
                   <input type="text" class="form-control" id="X" placeholder="Drop value here">
                 </div>
               </div>
@@ -85,12 +88,13 @@
               <div class="jumbotron data-placeholder margin-top10">
                 <h3>Your chart will appear here!</h3>
               </div>
-              <svg></svg>
+              <svg width="960" height="500"></svg>
             </div>
           </div>
         </div>
     </div>
     <script src="jquery/jquery-3.2.1.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/js/drag-n-drop.js"></script>
   </body>
 </html>
